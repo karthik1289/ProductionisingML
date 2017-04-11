@@ -1,4 +1,4 @@
-package com.walmart.hadrian.web;
+package com.meetup.hadrian.web;
 
 import java.util.HashMap;
 import java.util.Map;

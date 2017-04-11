@@ -1,4 +1,4 @@
-package com.walmart.hadrian.web;
+package com.meetup.hadrian.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
