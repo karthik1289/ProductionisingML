@@ -26,7 +26,7 @@ public class HadrianController {
 	@RequestMapping("/predict/kmeans")
 	public String predictKmeansCluster(@RequestParam(value = "testData") String testData)
 			throws Exception {
-		PredictModel predict = new PredictModel(testData, "/Users/kkaruna/Desktop/Hadrian/myClusterModel.pfa");
+		PredictModel predict = new PredictModel(testData, "/Users//Desktop/Hadrian/myClusterModel.pfa");
 		String output = predict.predictModel();
 		System.out.println(output);
 		return "Predicted Cluster:"+output;
@@ -34,7 +34,7 @@ public class HadrianController {
 
 	@RequestMapping("/predict/iris")
 	public String predict(@RequestParam(value = "testData") String testData) {
-		PredictModel predict = new PredictModel(testData, "/Users/kkaruna/Desktop/Hadrian/myModel.pfa");
+		PredictModel predict = new PredictModel(testData, "/Users//Desktop/Hadrian/myModel.pfa");
 		String output = predict.predictModel();
 		System.out.println(output);
 		return "Iris-"+output;
@@ -42,15 +42,15 @@ public class HadrianController {
 	
 	@RequestMapping("/predict/regression")
 	public void predictRegression(@RequestParam(value = "testData") String testData) {
-		PredictModel predict = new PredictModel(testData, "/Users/kkaruna/Desktop/Hadrian/myLinearRegModel.pfa");
+		PredictModel predict = new PredictModel(testData, "/Users//Desktop/Hadrian/myLinearRegModel.pfa");
 		String output = predict.predictModel();
 		System.out.println(output);
 	}
 
 	private Map<String, String> initFilePaths() {
 		Map<String, String> filePaths = new HashMap<String, String>();
-		filePaths.put("D1", "/Users/kkaruna/Desktop/Hadrian/myClusterModel.pfa");
-		filePaths.put("D2", "/Users/kkaruna/Desktop/Hadrian/myClusterModelUpdated.pfa");
+		filePaths.put("D1", "/Users//Desktop/Hadrian/myClusterModel.pfa");
+		filePaths.put("D2", "/Users//Desktop/Hadrian/myClusterModelUpdated.pfa");
 		return filePaths;
 	}
 
